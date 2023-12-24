@@ -1,0 +1,12 @@
+<h1>Vous êtes... </h1>
+
+<div class="formulaire">
+  <%= form_for @simulator, url: wizard_path, method: :put do |f| %>
+    <%= f.check_box :marital, { multiple: true }, 'Marié', nil %> Marié
+    <%= f.check_box :marital, { multiple: true }, 'Célibataire', nil %> Célibataire
+    <%= f.check_box :marital, { multiple: true }, 'Divorcé', nil %> Divorcé
+    <%= f.check_box :marital, { multiple: true }, 'Veuf', nil %> Veuf
+
+    <%= f.submit "Suivant", name:'next' %>
+  <% end %>
+</div>

@@ -1,0 +1,9 @@
+<h1>Vos revenues nets après impots par mois... </h1>
+
+<div class="formulaire">
+  <%= form_for @simulator, url: wizard_path, method: :put do |f| %>
+    <%= f.number_field :income, class: 'Test' %>
+
+    <%= f.submit "Suivant", name:'submit' %>
+  <% end %>
+</div>
